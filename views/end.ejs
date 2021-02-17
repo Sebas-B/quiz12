@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <title>Quizz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <script src="https://kit.fontawesome.com/6cca705b39.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+ </head>
+   <body>
+									
+   <!-- Elementos del HTML -->
+   <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>		
+            <form class="end-form-container">				  
+                <h2 id="end-text">Ingresa tu nombre para guardar tu score!</h2>	 
+                <input type="text" name="name" id="username" placeholder="Ingresa tu nombre">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Guardar</button>
+            </form>				       
+            <a href="/game" class="btn">Jugar de nuevo</a>     
+            <a href="/" class="btn">Ir al comienzo<i class="fas fa-home"></i></a>
+        </div>				   
+    </div>
+			       
+  <script src="/javascripts/game.js"></script>
+  <script src="/javascripts/end.js"></script>	
+				  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+ </body>
+</html>
